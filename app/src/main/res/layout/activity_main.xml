@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anuradha.teabrew.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagetea"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/teabrewedit"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEA BREW"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+
+        android:textSize="30sp"
+        android:layout_below="@id/imagetea"/>
+
+    <ImageView
+        android:id="@+id/locationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:src="@drawable/locationmarker"
+        android:layout_below="@id/companyName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indiranagar"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:layout_below="@id/companyName"
+        android:layout_toRightOf="@+id/locationImage"/>
+
+    <ImageView
+        android:id="@+id/callImage"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:src="@drawable/ic_call"
+        android:layout_below="@id/locationImage"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 9824351617"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/locationImage"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/operationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timings : 8 am to 11pm"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/number"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A cozy little cafe tucked inside one of the bylanes of Indiranagar serves you with a variety of tea and snacking options"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/operationTime"
+        android:layout_marginLeft="40dp"/>
+
+
+</RelativeLayout>
